@@ -1,0 +1,42 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    background: 
+        linear-gradient(135deg, rgb(228, 241, 255) 50%, 
+        transparent 50%) center center,
+        url(img/back.gif) right center / auto 100%;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border: 2px;
+}
+.banner_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border: 2px;
+}
+.banner_txt h1{
+    font-size: 80px;
+    border-bottom: 1px solid #333;
+    align-items: flex-start;
+}
+.banner_txt h1 small{
+    font-size: 25px;
+    display: block;
+}
+.banner_txt h2{
+    font-size: 30px;
+}
+.banner_txt p{
+    font-size: 12px;
+}
