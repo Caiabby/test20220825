@@ -19,6 +19,7 @@ p{
 }
 
 .main-header .container{
+    /* background-color: #4d4949; */
     display: flex;
     /* padding: 20px; */
     max-width: 1200px;
@@ -26,9 +27,9 @@ p{
     margin: auto;
 }
 
-.main-header .main-nav{
-    /* 要讓內部使用 transform 屬性
+/* 要讓內部使用 transform 屬性
     必須把 display 改成 flex*/
+.main-header .main-nav{
     display: flex;
     margin: auto;
 }
@@ -46,7 +47,8 @@ p{
     transform:translateY(-4px);
 }
 
-.main-header .main-nav a:after{ /*:after前面不可以空格*/
+/*:after前面不可以空格*/
+.main-header .main-nav a:after{ 
     content: '';
     text-align: center;
     position: absolute;
@@ -74,6 +76,56 @@ p{
 .main-nav{
     margin: auto;
 }
+
+/* --  -- */
+
+.list{
+    float: left;
+    color: #333;
+    padding: 0vh 2vh;
+    /* margin: 0vh 2vh; */
+    position: relative;
+    transform:translateY(4px);
+    transition: 0.4s;
+}
+#menu .main{
+    /* background-color: #e33535; */
+    /* color: #FFF; */
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    width: 100px;
+}
+.sub{
+    background-color:#CCDDFF;
+    color: #4d4949;
+    text-align: center;
+    width: 100px;
+    
+}
+.sub li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+#menu .main:after{ 
+    content: '';
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -8px;
+    height: 0px;
+    border-bottom: 2px solid #333;
+    transition: 0.4s;
+}
+#menu .main:hover:after{
+    left: 0%;
+    right: 0%;
+}
+
 
 /* -----banner------ */
 
@@ -261,16 +313,13 @@ p{
     align-items: center;
 }
 
-.wrap-works .works-pic,.works-picL,.works-picR{
+.wrap-works .works-pic{
     width: 50%;
     margin: 0 16px;
     /* background-color: aquamarine; */
 }
-.works-picL{
-    transform: translateY(28%);
-}
 
-.works-pic img,.works-picR img,.works-picL img{
+.works-pic img{
     width: 100%;
     height: 60vh;
     object-fit: cover;
@@ -297,4 +346,16 @@ p{
 .wrap_member .item:hover h3{
     border-bottom-color: #4873ff;
     color: #557dff;
+} */
+/* .works-picL{
+    transform: translateY(28%);
+} */
+/* .works-pic img,.works-picR img,.works-picL img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+} */
+/* .wrap-works .works-pic,.works-picL,.works-picR{
+    width: 50%;
+    margin: 0 16px;
 } */

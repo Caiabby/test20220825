@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="index.js"></script>
     </head> 
     <body>
         <header class="main-header">
@@ -16,11 +18,43 @@
                     <img src="img/yzuLOGO.png" alt="">
                 </a>
                 <nav class="main-nav">
-                    <a href="">Home</a>
-                    <a href="">Information</a>
-                    <a href="">Works</a>
-                    <a href="">About Us</a>
+                    <a href="">展覽資訊</a>
+                    <a href="works.html">展覽作品</a>
+                    <a href="">公告</a>
+                    <a href="about.html">關於我們</a>
                 </nav>
+                <!-- <div id="menu">
+                    
+                    <div class="list">
+                        <div class="main">展覽作品</div>
+                        <div class="sub">
+                            <ul>
+                                <li>遊戲組</li>
+                                <li>互動組</li>
+                                <li>影視組</li>
+                                <li>行銷組</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="list">
+                        <div class="main">展場資訊</div>
+                        <div class="sub">
+                            <ul>
+                                <li>線上展覽</li>
+                                <li>實體展覽</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="list">
+                        <div class="main">公告</div>
+                    </div>
+                    
+                    <div class="list">
+                        <div class="main">關於我們</div>
+                    </div>
+                </div> -->
             </div>
             
         </header>
@@ -85,133 +119,5 @@
             </div>
             
         </div>
-
-        <div class="wrap-works">
-            <!-- <div class="item">
-                <div class="works-txt">
-                    <h2>遊戲組</h2>
-                </div>
-                <div class="works-txt">
-                    <h3>作品名稱</h3>
-                    <p>
-                        作品內文作品內文作品內文作品內文作品內文
-                        作品內文作品內文作品內文作品內文作品內文
-                        作品內文作品內文作品內文作品內文作品內文
-                    </p>
-                </div>
-            </div> -->
-    
-            <div class="item">
-                <div class="works-pic">
-                    <img src="img/works02.jpg" alt="">
-                </div>
-                <div class="works-txt">
-                    <h3>作品名稱</h3>
-                    <p>
-                        作品內文作品內文作品內文作品內文作品內文
-                        作品內文作品內文作品內文作品內文作品內文
-                        作品內文作品內文作品內文作品內文作品內文
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="works-txt">
-                    <h3>作品名稱</h3>
-                    <p>
-                        作品內文作品內文作品內文作品內文作品內文
-                        作品內文作品內文作品內文作品內文作品內文
-                        作品內文作品內文作品內文作品內文作品內文
-                    </p>
-                </div>
-                <div class="works-pic">
-                    <img src="img/works03.jpeg" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="works-picL">
-                    <img src="img/works04.jpg" alt="">
-                </div>
-                <div class="works-picR">
-                    <img src="img/works04.jpg" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="works-picL">
-                    <img src="img/works04.jpg" alt="">
-                </div>
-                <div class="works-picR">
-                    <img src="img/works04.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="wrap_member">
-            <div class="item">
-                <img src="img/role1.png" alt="">
-                <div class="item-txt-member">
-                    <h3>成員1</h3>
-                    <p>
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/role2.jpg" alt="">
-                <div class="item-txt-member">
-                    <h3>成員2</h3>
-                    <p>
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/role3.png" alt="">
-                <div class="item-txt-member">
-                    <h3>成員3</h3>
-                    <p>
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                        成員介紹內文成員介紹內文
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </body>
 </html>
-
-<!-- <!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
-        <title>My first three.js app</title> 
-        <style> body { margin: 0; } </style> 
-    </head> 
-    <body> 
-        <script src="node_modules/three/build/three.js"></script> 
-        <script> 
-            const scene = new THREE.Scene(); 
-            const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 ); 
-            const renderer = new THREE.WebGLRenderer(); 
-            renderer.setSize( window.innerWidth, window.innerHeight ); 
-            document.body.appendChild( renderer.domElement ); 
-            const geometry = new THREE.BoxGeometry( 1, 1, 1 ); 
-            const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } ); 
-            const cube = new THREE.Mesh( geometry, material ); scene.add( cube ); 
-            camera.position.z = 5; 
-            function animate() { 
-                requestAnimationFrame( animate ); 
-                cube.rotation.x += 0.01; cube.rotation.y += 0.01; 
-                renderer.render( scene, camera ); 
-            };
-            animate(); 
-        </script> 
-    </body>
-</html> -->
